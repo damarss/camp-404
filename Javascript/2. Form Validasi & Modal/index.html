@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validasi & Modal</title>
+</head>
+<body>
+    <h1>Form Validasi & Modal</h1>
+    <p id="artikel">
+        Menanak nasi adalah kegiatan dimana nasi
+        <a href="#" id="readMore" onclick="fReadMore()">[Read more...]</a>
+    </p>
+    <p id="rahasia">Kata <a href="#" id="tombolRahasia" onclick="fRahasia()">sensor</a></p>
+
+    <h1>Registrasi</h1>
+    <button id="tombolInfo" onclick="fInfo()">Info Pengisian</button>
+    <p id="info" style="display: none;">Isikan semua field</p>
+    <form id="form_daftar" action="#" onsubmit="fSubmit()">
+        <table>
+        
+            <tr>
+                <td>Nama</td>
+                <td ><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <td>No. HP</td>
+                <td><input type="text" name="noHp"></td>
+            </tr>
+            <tr>
+                <td><button type="submit" id="tombolKirim">Kirim</button></td>
+            </tr>
+        </table>
+
+        <p id="hasil"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

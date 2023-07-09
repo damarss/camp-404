@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    padding-top: 10%;
+}
+
+.modal-content {
+    margin: auto;
+    border: 2px solid;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.center {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}

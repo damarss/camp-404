@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h2 id="judul" onclick="fMain()">Form</h2>
+    <form onsubmit="fSubmit()" id="formulir">
+        <label>Nama</label>
+        <input type="text" id="nama" onkeypress="fTekan()" pattern="[a-zA-z]+ [a-zA-z]+" title="Dua kata">
+        <br>
+        <label>Nomor HP</label>
+        <input type="text" name="phone" id="phone" pattern="[0-9]+" title="Hanya input angka" onkeydown="fKetikHp()">
+        <small style="visibility: hidden;" id="noHp">*Nomor HP harus lebih dari 8 angka</small>
+        <br>
+        <label>Jenis Kelamin</label>
+        <input type="radio" onchange="fBerubah(this.value)" name="jk" value="Laki-laki" id="jk">Laki-laki
+        <input type="radio" onchange="fBerubah(this.value)" name="jk" id="jk" value="Perempuan">Perempuan
+        <br>
+        <input type="button" value="warna" onclick="fWarna()">
+        <input type="reset" value="reset" onclick="fReset()">
+        <input type="submit" value="submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="center" id="center">
+        <p id="welcome">Silakan melakukan login terlebih dahulu</p>
+        <button id="login" onclick="tampilModal()" style="position: absolute;width: auto; margin-left: auto; margin-right: auto; left: 40%">Login</button>
+    </div>
+
+    <div class="modal" id="idModal">
+        <form class="modal-content">
+            <div class="container">
+                <span onclick="tutupModal()" class="close" title="Close Modal">&times;</span>
+                <label for="username"><b>Username :</b></label><br>
+                <input type="text" name="username" id="username"><br>
+
+                <label for="password"><b>Password :</b></label><br>
+                <input type="password" name="password" id="password"><br>
+
+                <input type="button" value="Login" id="submit" onclick="validate()">
+            </div>
+        </form>
+    </div>
+
+    
+    <script>
+        function tampilModal() {
+            document.getElementById("idModal").style.display = "block";
+            document.getElementById("center").style.display = "none";
+        }
+
+        function tutupModal() {
+            document.getElementById("idModal").style.display = "none";
+            document.getElementById("center").style.display = "block";
+        }
+
+        validate = () => {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "Aldi" && password == "1234567") {
+                alert("Login berhasil");
+                document.getElementById("welcome").innerHTML = "Login berhasil dilakukan";
+                document.getElementById("login").style.display = "none";
+                tutupModal();
+            } else {
+                alert("Username dan password Anda salah!");
+            }
+        }
+        
+    </script>
+</body>
+</html>

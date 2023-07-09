@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'navbar'
+    'header'
+    'content'
+    'footer'
+    ;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Open Sans";
+    color: #c70039;
+    padding: 25px 30px 25px 100px;
+}
+
+li a:hover {
+    color: #fedd1f;
+    cursor: pointer;
+}
+
+#logo {
+    font-size: 40px;
+    font-family: Castellar;
+    font-weight: bolder;
+    color: #b30033;
+    text-shadow: 5px 1px 10px #c70039;
+    padding: 10px 30px 25px 100px;
+}
+
+#logo:hover {
+    color: #fcd602;
+    text-shadow: 5px 1px 10px #fedd1f;
+    cursor: pointer;
+}
+
+.header {
+    grid-area: header;
+    height: 500px;
+    background-image: url("./Foto/header.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-button {
+    background-color: #c70039;
+    border: none;
+    color: #fff;
+    padding: 20px 37px;
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    margin: 4px 2px;
+}
+
+.header-button:hover {
+    background-color: #cc194c;
+    cursor: pointer;
+}
+
+.content {
+    grid-area: content;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column img {
+    height: 230px;
+    width: 100%;
+}
+
+.row {
+    margin: 0px 5px;
+}
+
+.card {
+    width: 90%;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 10px 25px;
+}
+
+#custom-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+}
+
+#custom-table td, #custom-table th {
+    border: 1px solid #fbfbfb;
+    padding: 10px;
+    text-align: center;
+}
+
+#custom-table tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+#custom-table tr:hover {
+    background-color: #fbfbfb;
+}
+
+#custom-table th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #c70039;
+    color: #fff;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #c70039;
+    text-align: center;
+    color: #fff;
+    padding: 25px 30px 25px 100px;
+}

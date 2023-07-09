@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Data Mahasiswa</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="location.html">Lokasi</a>
+        <a href="layout.html">Layout Sederhana</a>
+        <a href="form.html">Form Mahasiswa</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <h2>Form Data Mahasiswa</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td rowspan="2">Nama</td>
+                <td><input type="text" autofocus pattern="[a-zA-Z]+" placeholder="Nama Depan"></td>
+            </tr>
+            <tr>
+                <td><input type="text" pattern="[a-zA-Z]+" placeholder="Nama Belakang"></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td><input type="number" required></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk">Pria
+                    <input type="radio" name="jk">Wanita
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    <input type="checkbox">Makan
+                    <input type="checkbox">Nonton Film
+                    <input type="checkbox">Olahraga
+                </td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select>
+                        <option>D3 Statistika</option>
+                        <option>D4 Statistika</option>
+                        <option>D4 Komputasi Statistik</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Simpan">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

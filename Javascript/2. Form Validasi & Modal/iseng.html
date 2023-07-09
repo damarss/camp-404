@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iseng</title>
+</head>
+<body onload="main()">
+    <p id="text"></p>
+    <button onclick="monyet()" id="tombol">Tekan Gweh</button><br>
+    <img id="muka" src="http://c.files.bbci.co.uk/18034/production/_97765389_naruto.jpg" style="visibility: hidden;" alt="gambar muka lu" width="500px" height="auto">
+
+    <script>
+        function main() {
+            alert("Ini adalah program sederhana");
+            var nama = prompt("Masukkan nama Anda!");
+            var umur = prompt("Berapa umur Anda?");
+            var gender = prompt("Jenis kelamin Anda: ");
+            document.getElementById("text").innerHTML = `Nama Anda adalah ${nama}<br>`;
+            document.getElementById("text").innerHTML += `Anda berumur ${umur} tahun<br>`;
+            document.getElementById("text").innerHTML += `Anda adalah seorang ${gender}`;
+        }
+        function monyet() {
+            document.getElementById("tombol").style.display = "none";
+            document.getElementById("muka").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

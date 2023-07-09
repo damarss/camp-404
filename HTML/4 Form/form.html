@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Formulir Sewa Mobil</title>
+</head>
+<body>
+    <h1>Formulir Sewa Mobil</h1>
+    <div class="Formulir">
+        <form action="#">
+        <table width="35%">
+            <tr>
+                <td><label>Nama Lengkap: </label></td>
+                <td><input type="text" placeholder="Masukkan nama lengkap" name="nama"></td>
+            </tr>
+            <tr>
+                <td><label>Tempat Lahir: </label></td>
+                <td><input type="text" name="tempat"></td>
+            </tr>
+            <tr>
+                <td><label>Tanggal Lahir: </label></td>
+                <td><input type="date" name="ttl"></td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin: </label></td>
+                <td>
+                    <input type="radio" name="jk" value="laki">
+                        <label for="jk">Laki-laki</label>
+                    <input type="radio" name="jk" value="perempuan">
+                        <label for="jk">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Alamat Lengkap: </label></td>
+                <td><textarea name="alamat" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Mobil yang akan disewa: </label></td>
+                <td>
+                    <select name="mobil">
+                        <option value="-">--Select--</option>
+                        <option value="Avanza">Avanza</option>
+                        <option value="Ertiga">Ertiga</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Brio">Brio</option>
+                    </select>
+                    <label>Tahun: </label>
+                    <select name="tahun">
+                        <option value="-">--Select--</option>
+                        <option value="2010">2010</option>
+                        <option value="2015">2015</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Waktu pengambilan mobil: </label></td>
+                <td><input type="time" name="ambil"></td>
+            </tr>
+            <tr>
+                <td><label>Waktu pengembalian mobil: </label></td>
+                <td><input type="time" name="kembali"></td>
+            </tr>
+            <tr>
+                <td><label>Upload gambar KTP: </label></td>
+                <td><input type="file" name="ktp"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Kirim"></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+ul li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    font-family: "Open Sans";
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid #000; 
+    margin: 2px;
+    padding: 25px 50px;
+}
+
+#logo {
+    font-family: Castellar;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 5px 1px 10px red;
+    padding: 10px 30px 25px 30px;
+}

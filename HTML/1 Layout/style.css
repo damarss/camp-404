@@ -1,0 +1,14 @@
+span {
+    color: red;
+}
+
+
+.box1 {
+    border: 2px solid brown;
+    padding: 50px;
+    margin: 20px;
+}
+
+table {
+    position: absolute;
+}
